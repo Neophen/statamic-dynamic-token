@@ -33,3 +33,6 @@ If you've changed your api denominator, you will need to modify `$route = '/!/Dy
 - Settings: set refresh time span, currently 15 minutes
 - Automatic pickup of your api denominator
 - Server only handling of forms, without the `{{ dynamic_token }}` tag
+
+### Contact
+You can use the support email. or just ping `@mykoas` in the statamic discord server.
