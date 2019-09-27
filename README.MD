@@ -4,6 +4,10 @@ Want static full/half measure caching in statamic?
 But also still want to have forms in those static pages?
 DynamoInStatamo is here to help.
 
+### Installing
+
+Copy the `DynamicToken` into your `site/addons` folder.
+
 ### Configuration
 
 - disable CSRF verification by adding `/!/DynamicToken` to the `csrf_exclude` array in `site/settings/system.yaml`. Don't worry we check that the referrer is comming from your `APP_URL`, but this still carries its own risks.
@@ -11,10 +15,6 @@ DynamoInStatamo is here to help.
 - add an `APP_URL=<your_site_url>` to your `.env` file.
 e.g.:`APP_URL=site.com`
 local development: `APP_URL=localhost`
-
-### Installing
-
-Copy the `DynamicToken` into your `site/addons` folder.
 
 ### How does this work?
 
