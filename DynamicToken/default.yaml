@@ -1,0 +1,2 @@
+refresh_timer: 15
+selector: 'form input[name="_token"]'

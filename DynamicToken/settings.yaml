@@ -1,0 +1,7 @@
+fields:
+  refresh_timer:
+    type: text
+    validate: "required|integer"
+  selector:
+    type: text
+    validate: "required"

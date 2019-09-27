@@ -26,12 +26,7 @@ The `{{ dynamic_token }}` inserts a bit of javascript into your static html file
 ###### 2st:
 A simple controller, which checks the refferer and if the refferer matches your `APP_URL` it returns a fresh `csrf` token.
 
-### Gotchas
-If you've changed your api denominator, you will need to modify `$route = '/!/DynamicToken/refresh';` in the `DynamicToken/DynamicTokenTags.php` file. The default statamic denominator is `/!/`;
-
 ### Upcoming
-- Settings: set refresh time span, currently 15 minutes
-- Automatic pickup of your api denominator
 - Server only handling of forms, without the `{{ dynamic_token }}` tag
 
 ### Contact

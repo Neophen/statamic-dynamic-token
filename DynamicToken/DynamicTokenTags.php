@@ -14,8 +14,10 @@ class DynamicTokenTags extends Tags
    */
   public function index()
   {
-    $route = '/!/DynamicToken/refresh';
-    $selector = 'form input[name="_token"]';
+    $route = $this->actionUrl('/refresh');
+    $selector = $this->getConfig('selector', 'form input[name="_token"]');
+    $minutes = $this->getConfigInt('refresh_timer', 15);
+
     return "
         <script>
         if (document.querySelectorAll('{$selector}').length > 0) {
@@ -55,7 +57,7 @@ class DynamicTokenTags extends Tags
 
           updateToken();
 
-          setInterval(updateToken, 15 * 60 * 1000); // Every 15 minutes.
+          setInterval(updateToken, {$minutes} * 60 * 1000); // Every 15 minutes.
         }
       </script>";
   }
