@@ -1,6 +1,6 @@
-name: 'Dynamic Token'
+name: 'Static pages, dynamic forms'
 version: '1.0'
 description: 'Add dynamic csrf tokens to all forms using {{ dynamic_token }} tag, in statically cached pages.'
 developer: 'Mykolas Mankevicius'
 developer_url: 'https://www.co-openhagen.com/'
-commercial: true
+commercial: false
