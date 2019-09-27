@@ -1,7 +1,7 @@
 # Dynamic Forms in staticly cached pages for Statamic
 
-Want static full/half measure caching in statamic?
-But also still want to have forms in those static pages?
+Want static full/half measure caching in statamic?  
+But also still want to have forms in those static pages?  
 DynamoInStatamo is here to help.
 
 ### Installing
