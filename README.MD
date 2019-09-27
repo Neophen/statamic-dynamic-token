@@ -2,7 +2,7 @@
 
 Want static caching in statamic? And still want to have dynamic forms? for e.g.
 
-![dynamic form in static page](https://raw.githubusercontent.com/Neophen/statamic-dynamic-token/master/public/dynamic_in_static.png)
+![dynamic form in static page](public/dynamic_in_static.png)
 
 Just add a `{{ dynamic_token }}` to your layout file just before `</body>` tag.
 then add an `APP_URL=site.com` to your `.env` file
