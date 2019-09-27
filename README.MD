@@ -35,4 +35,4 @@ If you've changed your api denominator, you will need to modify `$route = '/!/Dy
 - Server only handling of forms, without the `{{ dynamic_token }}` tag
 
 ### Contact
-You can use the support email. or just ping `@mykoas` in the statamic discord server.
+You can use the support email or just ping `@mykoas` in the statamic discord server.
