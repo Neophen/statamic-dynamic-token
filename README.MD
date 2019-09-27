@@ -1,8 +1,8 @@
 # Dynamic Forms in staticly cached pages for Statamic
 
 Want static full/half measure caching in statamic?
-But also still want to have forms in those static pages?
-This addon to the rescue.
+But still want to have forms in those static pages?
+Just use this addon and all your problems will be gone!
 
 ### Installing
 
