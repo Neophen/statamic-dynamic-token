@@ -1,4 +1,4 @@
-# Dynamic Forms in static pages for ![statamic](https://raw.githubusercontent.com/Neophen/statamic-dynamic-token/master/public/statamic-logo.png)
+# Dynamic Forms in static pages for ![statamic](public/statamic-logo.png)
 
 Want static caching in statamic? And still want to have dynamic forms? for e.g.
 
