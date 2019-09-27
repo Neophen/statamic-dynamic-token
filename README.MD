@@ -31,5 +31,5 @@ If you've changed your api denominator, you will need to modify `$route = '/!/Dy
 
 ### Upcoming
 - Settings: set refresh time span, currently 15 minutes
-- Automatic pickup of your api denomitor
+- Automatic pickup of your api denominator
 - Server only handling of forms, without the `{{ dynamic_token }}` tag
