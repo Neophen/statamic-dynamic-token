@@ -13,7 +13,7 @@ You can configure the addon by visiting CP > Addons > Dynamic Token:
 ## Usage
 
  * disable CSRF verification by adding `/!/DynamicToken` to the `csrf_exclude` array in `site/settings/system.yaml`. Don't worry we check that the referrer is comming from your `APP_URL`, but this still carries its own risks.
- * add a `\{\{ dynamic_token \}\}` to your layout file just before `</body>` tag.
+ * add a `\{{ dynamic_token \}}` to your layout file just before `</body>` tag.
  * add an `APP_URL=<your_site_url>` to your `.env` file.
 e.g.:`APP_URL=site.com`
 local development: `APP_URL=localhost`
@@ -31,15 +31,15 @@ local development: `APP_URL=localhost`
 </head>
 <body>
 
-	\{\{ form:create in="superfans" \}\}
-		\{\{ fields \}\}
-			<label>\{\{ display \}\}
-				<input type="text" name="\{\{ field }}" value="\{\{ old }}" \/\>
+	\{{ form:create in="superfans" \}}
+		\{{ fields \}}
+			<label>\{{ display \}}
+				<input type="text" name="\{{ field }}" value="\{{ old }}" \/\>
 			</label>
-		\{\{ /fields \}\}
-	\{\{ /form:create \}\}
+		\{{ /fields \}}
+	\{{ /form:create \}}
 
-	\{\{ dynamic_token \}\}
+	\{{ dynamic_token \}}
 
 </body>
 </html>
