@@ -4,7 +4,6 @@ Want static caching in statamic? And still want to have dynamic forms?
 Just add a `{{ dynamic_token }}` to your layout file just before `</body>` tag.
 and then add an `APP_URL=site.com` to your `.env` file.
 
-
 ### Installing
 Copy the `DynamicToken` into your `site/addons` folder.
 ### How does this work?
