@@ -2,7 +2,7 @@
 
 Want static full/half measure caching in statamic?
 But also still want to have forms in those static pages?
-DynamoInStatamo is here to help.
+This addon to the rescue.
 
 ### Installing
 
