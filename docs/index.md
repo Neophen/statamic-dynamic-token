@@ -8,12 +8,12 @@
 You can configure the addon by visiting CP > Addons > Dynamic Token:
 
   * **Refresh interval** - an interval for updating your csrf token every `n` minutes.
-  * **CSS Selector** - If you want to change the default selector, **note** this will break `{{ form:create }}`.
+  * **CSS Selector** - If you want to change the default selector, **note** this will break `{{ "{{ form:create " }}}}`.
 
 ## Usage
 
  * disable CSRF verification by adding `/!/DynamicToken` to the `csrf_exclude` array in `site/settings/system.yaml`. Don't worry we check that the referrer is comming from your `APP_URL`, but this still carries its own risks.
- * add a `\{\{ dynamic_token }}` to your layout file just before `</body>` tag.
+ * add a `{{ "{{ dynamic_token " }}}}` to your layout file just before `</body>` tag.
  * add an `APP_URL=<your_site_url>` to your `.env` file.
 e.g.:`APP_URL=site.com`
 local development: `APP_URL=localhost`
@@ -21,6 +21,7 @@ local development: `APP_URL=localhost`
 ## Examples
 
 ```
+{% raw %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,18 +32,19 @@ local development: `APP_URL=localhost`
 </head>
 <body>
 
-	\{\{ form:create in="superfans" }}
-		\{\{ fields }}
-			<label>\{\{ display }}
-				<input type="text" name="\{\{ field }}" value="\{\{ old }}" \/\>
-			</label>
-		\{\{ /fields }}
-	\{\{ /form:create }}
+	{{ form:create in="superfans" }}
+	{{ fields }}
+		<label>{{ display }}
+			<input type="text" name="{{ field }}" value="{{ old }}" \>
+		</label>
+	{{ /fields }}
+	{{ /form:create }}
 
-	\{\{ dynamic_token }}
+	{{ dynamic_token }}
 
 </body>
 </html>
+{% endraw %}
 ```
 
 ## License
