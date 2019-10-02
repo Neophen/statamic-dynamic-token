@@ -47,4 +47,6 @@ local development: `APP_URL=localhost`
 
 ## License
 
+Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/)
+
 [MIT License](http://emd.mit-license.org)
