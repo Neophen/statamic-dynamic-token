@@ -1,7 +1,11 @@
 ## Installation
 
+Notice: the `{{ errors }}` and `{{ success }}` tags won't work with this. As you're redirecting back to the same static page. Best options for this is to have basic html validation for the fields, and on success redirect to a success page.
+
+## Installation
+
 1. Copy the "DynamicToken" folder contents to your Statamic `site/addons` directory
-2. Run `php please update:addons` to load the addon's dependencies.
+2. Run `php please update:addons` to load the addons dependencies.
 
 ## Configuration
 
